@@ -1,0 +1,323 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    object-fit: cover;
+}
+body{
+    background-image:url(https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/c413f20400e04805.webp);
+    background-size: cover;
+    background-size: 100% ;
+    background-repeat:no-repeat;
+    margin: 0;
+}
+.nav .menu{
+    padding: 10px;
+    margin:10px;
+    /* background:#fff; */
+
+}
+.nav .menu img{
+    width: 20px;
+    position: fixed;
+    z-index: 1;
+    margin-left: 20px;
+    margin-top: 0px;
+}
+.nav .logo{
+    padding:10px;
+    margin:10px;
+}
+.nav .logo img{
+    width:91px;
+    position: fixed;
+    margin-left: 62px;
+    margin-top: -28px;
+    size: 100%;
+}
+.nav .login-btn .loginbtn:hover{
+    background: #e0dddd;
+
+}
+.nav .login-btn .loginbtn{
+    text-decoration: none;
+    position: fixed;
+    width:62px;
+    height:36px;
+    padding: 5px;
+    border-radius: 500px;
+    border: none;
+    font-size: 15px;
+    /* margin-left:1710px; */
+    font-weight: 500;
+    margin-top: -55px;
+    right: 128px;
+    font-size: 14px;
+    line-height: 16px;
+    font-family: UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;;
+    cursor: pointer;
+}
+.nav .login-btn .signup:hover{
+    background: #333232;
+}
+.nav .login-btn .signup{
+    position: fixed;
+    width:73px;
+    background-color: #000;
+    color: #fff;
+    height:36px;
+    padding:10px;
+    border-radius: 500px;
+    border: none;
+    font-size: 15px;
+    /* margin-left:1800px; */
+    margin-top: -55px;
+    font-weight: 500;
+    right:38px;
+    font-size: 14px;
+    font-family: UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    cursor: pointer;
+    width:px;
+}
+h1{
+    max-width: 60%;
+    display:block;
+    margin-top:360px;
+    padding-left: 40px;
+    font-size: 52px;
+    line-height: 64px;
+    font-family:  UberMove, sans-serif;
+    font-weight: 501;
+    color: #000;
+    /* margin:0; */
+}
+.forms .form1{
+    position: absolute;
+    border:none;
+    margin-left:45px;
+    font:inherit;
+    height:55px;
+    width: 28%;
+    padding:0;
+    cursor: pointer;
+    background-color: #ffff;
+    display: flex;
+    font-size: 16px;
+    cursor: text;
+    border:none;
+    font-family:UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif; ;
+    box-sizing: border-box;
+}
+
+.form1 >input{
+    width: 100%;
+    outline: none;
+   padding:10px;
+   border:none;
+   font-size: 16px;
+
+}
+/* day8 */
+.form1 img{
+    position: absolute;
+    width:35px;
+    top: 11px;
+    transform: translateX(0px);
+}
+  .form2{
+    display: flex;
+    justify-content: center;
+    position:relative;
+    min-width:250px;
+    height:50px;
+    left: 2px;
+    margin-right:100px;
+    /* margin-bottom: 200px; */
+    margin-left: -110px;
+  }
+  .form2 .icon{
+    width:50px;
+    height:100%;
+    position:absolute;
+    z-index:1;
+    left:700px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .form2 h2{
+    margin-right:100px ;
+  }
+  .icon img{
+    width:25px;
+    color:#000;
+    margin-top:8px;
+   margin-right:10px
+  }
+  .dropdown{
+    position: absolute;
+    left:700px;
+    border:none;
+    outline:none;
+    padding:0 56px 0 30px;
+    width:10%;
+    height:55px;
+    font-size:16px;
+    font-weight: 450;
+    background-color: #fff;
+    margin:0;
+    /* transform: translateY(-245px); */
+  }
+
+.search button{
+    display: flex;
+    font-size:18px;
+    padding: 13px 16px;
+    /* width: max-content; */
+    height:55px;
+    background: #000;
+    justify-content: center;
+    font-weight:500;
+    transform: translate(750px,-278px);
+    margin-top: 228px;
+    margin-left: 45px;
+    border-radius: 10px;
+    color: #fff;
+    border:none;
+}
+.search .btn{
+   /* position:absolute; */
+   /* top:0; */
+   /* right: 140px; */
+   /* margin-top: 16px; */
+   margin-right: 18px;
+   font-weight: 700;
+}
+/* .body ::after{
+    display: grid;
+} */
+.sign-in{
+    border: none;
+    margin: 0;
+    padding: 0;
+    margin-left:45px;
+    margin-top:-250px;
+
+}
+.sign-in p{
+    line-height: 16px;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.sign-in  p a {
+    cursor: pointer;
+    text-decoration: underline;
+    color: #000;
+
+}
+/* main stsrts */
+ .main-content{ 
+    display:grid;
+     /* padding */
+     grid-template-columns: 1fr 1fr 1fr;
+     padding: 0;
+     grid-column-gap: 22px;
+     grid-row-gap:0;
+     transform:translateY(180px);
+     margin-top:21%;
+     cursor: pointer;
+}
+.main-content a{
+    text-decoration: none;
+    cursor: pointer;
+}
+.main-content p{
+    text-decoration:underline;
+    cursor: pointer;
+}
+.main-content img{
+    width:100%;
+    margin-left: -25px;
+    margin-right: 25px;
+}
+.main-content .image h2{
+    padding: 0;
+    font-size:30px;
+    color:#000000;
+    font-family:UberMove, sans-serif;
+    font-weight:700;
+    text-align: left;
+    text-decoration: none;
+}
+
+.main-content .image p{
+    font-size:15px;
+    color: #000000;
+    font-family: UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.cities{
+    position:absolute;
+    display: flex;
+    padding: 0;
+    margin: 0;
+
+}
+.cities .location{
+    display :inline-flex;
+    justify-content: space-between;
+}
+.cities .location h2{
+    line-height: 44px;
+    font-weight: 600;
+    font-size: 36px;
+    font-family: UberMove, sans-serif;
+    margin: 0;
+    margin-left: 38px;
+    margin-top: 300px;
+}
+.cities .location a{
+  cursor: pointer;
+  text-decoration: underline;
+  font-size: 16px;
+  font-family: UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: black;
+  font-weight: 500;
+  line-height: 20px;
+  margin-left:1800px;
+  margin-top: 300px;
+  display: inline-block;
+
+}
+.cities .map{
+
+}
+.cities .places{
+    
+}
+.places .place ul {
+    padding:20px 0 10px ;
+    line-height: 24px;
+    font-size: 16px;
+    font-weight:399 ;
+    font-family: UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #000; 
+    padding: 20px 20px 200px 20px;
+    margin-top:500px;
+}
+ .column1 li{
+  margin-left:-280px;
+  
+  
+}
+.column2 li{
+    margin-left:100px;
+    margin-bottom: 50px;
+  
+}
+.column3 li{
+    margin-left:500px;
+}
+.column4 li{
+    margin-left:850px;
+}
