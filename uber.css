@@ -126,13 +126,7 @@ nav {
     border: none;
 }
 
-/* nav .menu img{
-    width: 20px;
-    position: fixed;
-    z-index: 1;
-    margin-left: 20px;
-    margin-top: 0px;
-} */
+
 .logo {
     margin-right: 28px;
     margin-left: 8px;
@@ -161,7 +155,6 @@ nav {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    /* margin-top: 40px; */
     margin-top: -20px;
 
 }
