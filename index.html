@@ -1,185 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="style.css">
-   <link rel="icon" type="image/png" href="images/uber-logo.png">
-    <title>Uber Eats | Food DElivery</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images/uber-logo.png">
+    <title>Uber Eats | Food Delivery</title>
 </head>
 
 <body>
-    <nav class="nav">
-        <div class="menu">
-            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIj48dGl0bGU+VGhyZWUgbGluZXM8L3RpdGxlPjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMjMgNEgxdjNoMjJWNFptMCA3SDF2M2gyMnYtM1pNMSAxOGgyMnYzSDF2LTNaIiBmaWxsPSJjdXJyZW50Q29sb3IiLz48L3N2Zz4=" alt="">
-           </div>
-           <div class="logo">
-            <img src="images/logo.svg" alt="">
-           </div>
-           <div class="login-btn" >
-            <button class="loginbtn" id="login">Log in</button>
-            <button class="signup" id="Sign-up">Sign up</button>
+    <div class="ubereats">
+        <div class="background">
+            <div>
+                <header>
+                    <nav>
+                        <div class="nav-position">
+                            <div class="nav-padding">
+                                <div class="left-side">
+                                    <div class="menu">
+                                        <button>
+                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                                <title>Three lines</title>
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M23 4H1v3h22V4Zm0 7H1v3h22v-3ZM1 18h22v3H1v-3Z"
+                                                    fill="currentColor">
+                                                </path>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="logo">
+                                        <img src="images/logo.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="empty"></div>
+                                <div class="login-btn">
+                                    <div class="button">
+                                        <!-- <button class="loginbtn" id="login">Log in</button>
+                            <button class="signup" id="Sign-up">Sign up</button> -->
+                                        <div>Log in</div>
+                                        <div>Sign up</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </header>
+                <div class="head-main">
+                    <div class="ubereats-head">
 
-           </div>
-    </nav>
-    <div>
-        <h1>Order delivery near you</h1>
-    </div>
-    <div class="forms">
-        <div class="form1">
-            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjRweCIgaGVpZ2h0PSIyNHB4IiBmaWxsPSJub25lIiB2aWV3Qm94PSIwIDAgMjQgMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgYXJpYS1oaWRkZW49InRydWUiIGZvY3VzYWJsZT0iZmFsc2UiPjxwYXRoIGQ9Ik0xNy41ODM0IDUuMTY2MDJDMTQuNTAwMSAyLjA4MjY4IDkuNTAwMDggMi4wODI2OCA2LjQxNjc1IDUuMTY2MDJDMy4zMzM0MSA4LjI0OTM1IDMuMzMzNDEgMTMuMzMyNyA2LjQxNjc1IDE2LjQxNkwxMi4wMDAxIDIxLjk5OTNMMTcuNTgzNCAxNi4zMzI3QzIwLjY2NjcgMTMuMzMyNyAyMC42NjY3IDguMjQ5MzUgMTcuNTgzNCA1LjE2NjAyWk0xMi4wMDAxIDEyLjQxNkMxMS4wODM0IDEyLjQxNiAxMC4zMzM0IDExLjY2NiAxMC4zMzM0IDEwLjc0OTNDMTAuMzMzNCA5LjgzMjY4IDExLjA4MzQgOS4wODI2OCAxMi4wMDAxIDkuMDgyNjhDMTIuOTE2NyA5LjA4MjY4IDEzLjY2NjcgOS44MzI2OCAxMy42NjY3IDEwLjc0OTNDMTMuNjY2NyAxMS42NjYgMTIuOTE2NyAxMi40MTYgMTIuMDAwMSAxMi40MTZaIiBmaWxsPSJjdXJyZW50Q29sb3IiLz48L3N2Zz4=" alt="">
-             <input type="text" placeholder="            Enter delivery address">
 
-        </div>
-        <div class="form2">
-            <div class="icon">
-                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjRweCIgaGVpZ2h0PSIyNHB4IiBmaWxsPSJub25lIiB2aWV3Qm94PSIwIDAgMjQgMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgYXJpYS1sYWJlbD0iV2hlbiIgcm9sZT0iaW1nIiBmb2N1c2FibGU9ImZhbHNlIj48cGF0aCBkPSJNMTIgMi44MzM5OEM2LjkxNjcxIDIuODMzOTggMi44MzMzNyA2LjkxNzMyIDIuODMzMzcgMTIuMDAwN0MyLjgzMzM3IDE3LjA4NCA2LjkxNjcxIDIxLjE2NzMgMTIgMjEuMTY3M0MxNy4wODM0IDIxLjE2NzMgMjEuMTY2NyAxNy4wODQgMjEuMTY2NyAxMi4wMDA3QzIxLjE2NjcgNi45MTczMiAxNy4wODM0IDIuODMzOTggMTIgMi44MzM5OFpNMTcgMTMuNjY3M0gxMC4zMzM0VjUuMzMzOThIMTIuODMzNFYxMS4xNjczSDE3VjEzLjY2NzNaIiBmaWxsPSIjMDAwMDAwIi8+PC9zdmc+" alt="">
+                        <h1>Order delivery near you</h1>
+
+                        <div class="forms">
+                            <div class="form-padding">
+
+                                <div class="form1">
+                                    <div class="form1-padding">
+                                        <div class="input">
+                                            <div>
+                                                <svg width="24px" height="24px" fill="none" viewBox="0 0 24 24"
+                                                    xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                                    focusable="false">
+                                                    <path
+                                                        d="M17.5834 5.16602C14.5001 2.08268 9.50008 2.08268 6.41675 5.16602C3.33341 8.24935 3.33341 13.3327 6.41675 16.416L12.0001 21.9993L17.5834 16.3327C20.6667 13.3327 20.6667 8.24935 17.5834 5.16602ZM12.0001 12.416C11.0834 12.416 10.3334 11.666 10.3334 10.7493C10.3334 9.83268 11.0834 9.08268 12.0001 9.08268C12.9167 9.08268 13.6667 9.83268 13.6667 10.7493C13.6667 11.666 12.9167 12.416 12.0001 12.416Z"
+                                                        fill="currentColor"></path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="form-input">
+                                            Enter delivery address
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form2">
+                                    <div class="icon">
+                                        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjRweCIgaGVpZ2h0PSIyNHB4IiBmaWxsPSJub25lIiB2aWV3Qm94PSIwIDAgMjQgMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgYXJpYS1sYWJlbD0iV2hlbiIgcm9sZT0iaW1nIiBmb2N1c2FibGU9ImZhbHNlIj48cGF0aCBkPSJNMTIgMi44MzM5OEM2LjkxNjcxIDIuODMzOTggMi44MzMzNyA2LjkxNzMyIDIuODMzMzcgMTIuMDAwN0MyLjgzMzM3IDE3LjA4NCA2LjkxNjcxIDIxLjE2NzMgMTIgMjEuMTY3M0MxNy4wODM0IDIxLjE2NzMgMjEuMTY2NyAxNy4wODQgMjEuMTY2NyAxMi4wMDA3QzIxLjE2NjcgNi45MTczMiAxNy4wODM0IDIuODMzOTggMTIgMi44MzM5OFpNMTcgMTMuNjY3M0gxMC4zMzM0VjUuMzMzOThIMTIuODMzNFYxMS4xNjczSDE3VjEzLjY2NzNaIiBmaWxsPSIjMDAwMDAwIi8+PC9zdmc+"
+                                            alt="">
+                                    </div>
+                                    <select class="dropdown">
+                                        <h2>Deliver Now</h2>
+                                        <option value="option1">Deliver now</option>
+                                        <option value="option2">Shedule for later</option>
+                                    </select>
+                                </div>
+                                <!-- day8 -->
+                                <div class="search">
+                                    <button class="btn" id="search button">Search here</button>
+                                </div>
+                            </div>
+                        </div>
+                   
+                    <div class="sign-in">
+                        <p>Or
+                            <a
+                                href="https://auth.uber.com/v2/?breeze_init_req_id=f471085f-bd1a-44ef-9aa4-e3d4343ec056&breeze_local_zone=phx2&next_url=https%3A%2F%2Fwww.ubereats.com%2Flogin-redirect%2F%3Fapp_clip%3Dfalse%26campaign%3Dsignin_universal_link%26guest_mode%3Dfalse%26marketing_vistor_id%3Da8f9545c-ad51-442c-8a31-3cc1b37e486b%26redirect%3D%252F&state=i7Fdt0pCMf22Pg8Rsft04YH9NDQyrO5LrP53NCqVF4Y%3D&x-uber-did=a60ab69a-625c-4000-a88e-74afeeb3541c">
+                                Sign in</a>
+                        </p>
+                    </div>
+                </div>
+
             </div>
-            <select class="dropdown">
-                <h2>Deliver Now</h2>
-                <option value="option1">Deliver now</option>
-                <option value="option2">Shedule for later</option>
-            </select>
         </div>
-        <!-- day8 -->
-        <div class="search">
-             <button class="btn" id="search button">Search here</button>
-        </div>
-    </div>   
-    <div class="sign-in">
-         <p>Or
-            <a href="https://auth.uber.com/v2/?breeze_init_req_id=f471085f-bd1a-44ef-9aa4-e3d4343ec056&breeze_local_zone=phx2&next_url=https%3A%2F%2Fwww.ubereats.com%2Flogin-redirect%2F%3Fapp_clip%3Dfalse%26campaign%3Dsignin_universal_link%26guest_mode%3Dfalse%26marketing_vistor_id%3Da8f9545c-ad51-442c-8a31-3cc1b37e486b%26redirect%3D%252F&state=i7Fdt0pCMf22Pg8Rsft04YH9NDQyrO5LrP53NCqVF4Y%3D&x-uber-did=a60ab69a-625c-4000-a88e-74afeeb3541c">
-                Sign in</a>
-         </p>
     </div>
-    
     <section class="main-content">
         <div class="image">
-           <a href="https://www.uber.com/in/en/business/solutions/eats/overview/"></a>
-               <img src="https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/88d55f7112efe55f.webp" alt="">
-               <h2>Feed your employees</h2>
-               <p>Create aa business account</p>
-      </div>
-      <div class="image">
-        <a href="https://merchants.ubereats.com/in/en/s/signup/"></a>
+            <a href="https://www.uber.com/in/en/business/solutions/eats/overview/"></a>
+            <img src="https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/88d55f7112efe55f.webp" alt="">
+            <h2>Feed your employees</h2>
+            <p>Create aa business account</p>
+        </div>
+        <div class="image">
+            <a href="https://merchants.ubereats.com/in/en/s/signup/"></a>
             <img src="https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/711d51ca1b458931.webp" alt="">
-             <h2>Your restaurant, delivered</h2>
-             <p>Add your restaurant</p>
-      </div>
-      <div class="image">
-        <a href="https://www.uber.com/drive/delivery/"></a>
-         <img src="https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/16522a701585873b.webp" alt="">  
-         <h2>Deliver with uber Eats</h2>
-         <p>Sign up to deliver</p>
-      </div>
+            <h2>Your restaurant, delivered</h2>
+            <p>Add your restaurant</p>
+        </div>
+        <div class="image">
+            <a href="https://www.uber.com/drive/delivery/"></a>
+            <img src="https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/16522a701585873b.webp" alt="">
+            <h2>Deliver with uber Eats</h2>
+            <p>Sign up to deliver</p>
+        </div>
     </section>
 
     <section class="cities">
-     <div class="loc">
-        <div class="location">
-            <h2>Cities near me</h2>
-            <a  class="all cities"href="https://www.ubereats.com/location"> View all 500+ cities</a>
-      </div>
-      <div class="map">
-        <img src="images/map.png" alt="">
-      </div>
-     <!-- </div> -->
-    <!-- </section> -->
-   
-    <!-- <section class="places"> -->
-      <div class="del-place">
-        <div class="places">
-            <ul class="column1">
-                <li> Akron</li>
-                <li>Albuquerque</li>
-                <li>Bridgeport</li>
-                <li>Concord</li>
-                <li>Dayton</li>
-                <li>El Paso</li>
-            </ul>
-                <ul class="column2">
-                    <li>Hartford</li>
-                    <li> Houston</li>
-                    <li>Indianapolis</li>
-                    <li>McAllen</li>
-                    <li>Mesa</li>
-                    <li>Milwaukee</li>
+        <div class="loc">
+            <div class="location">
+                <h2>Cities near me</h2>
+                <a class="all cities" href="https://www.ubereats.com/location"> View all 500+ cities</a>
+            </div>
+            <div class="map">
+                <img src="images/map.png" alt="">
+            </div>
+            <!-- </div> -->
+            <!-- </section> -->
+
+            <!-- <section class="places"> -->
+            <div class="del-place">
+                <div class="places">
+                    <ul class="column1">
+                        <li> Akron</li>
+                        <li>Albuquerque</li>
+                        <li>Bridgeport</li>
+                        <li>Concord</li>
+                        <li>Dayton</li>
+                        <li>El Paso</li>
+                    </ul>
+                    <ul class="column2">
+                        <li>Hartford</li>
+                        <li> Houston</li>
+                        <li>Indianapolis</li>
+                        <li>McAllen</li>
+                        <li>Mesa</li>
+                        <li>Milwaukee</li>
+                    </ul>
+                    <ul class="column3">
+                        <li>Neshville</li>
+                        <li>New Orleans</li>
+                        <li>Oklahoma City</li>
+                        <li>Omaha</li>
+                        <li>Orlando</li>
+                        <li>Palm Bay</li>
+                    </ul>
+                    <ul class="column4">
+                        <li>Providence</li>
+                        <li>Queens</li>
+                        <li>San Antonio</li>
+                        <li>Stony Brook</li>
+                        <li>Tucson</li>
+                        <li>West Hollywood</li>
+                    </ul>
+                </div>
+                <!-- </div> -->
+            </div>
+    </section>
+    <section class="countries">
+        <div class="country">
+            <h2>Countries with Uber Eats</h2>
+            <a href="https://www.ubereats.com/location#all-countries"> View all countries</a>
+
+            <div class="count-column">
+                <ul class="clm">
+
+                    <li>Australia</li>
+                    <li>Belgium</li>
+                    <li>Canada</li>
+                    <li>Chile</li>
+                    <li>Costa Rica</li>
+                    <li>Dominican Republic</li>
+                    <li>Ecudor</li>
+                    <li>El Salvador</li>
                 </ul>
-                <ul class="column3">
-                    <li>Neshville</li>
-                    <li>New Orleans</li>
-                    <li>Oklahoma City</li>
-                    <li>Omaha</li>
-                    <li>Orlando</li>
-                    <li>Palm Bay</li>
+
+
+                <ul class="clm">
+
+                    <li>France</li>
+                    <li>Germany</li>
+                    <li>Guatemala</li>
+                    <li>Ireland</li>
+                    <li>Italy</li>
+                    <li>Japan</li>
+                    <li>Kenya</li>
+                    <li>Mexico</li>
                 </ul>
-                <ul class="column4">
-                     <li>Providence</li>
-                     <li>Queens</li>
-                     <li>San Antonio</li>
-                     <li>Stony Brook</li>
-                     <li>Tucson</li>
-                     <li>West Hollywood</li>
+
+                <ul class="clm">
+
+                    <li>Netherlands</li>
+                    <li>New Zealand</li>
+                    <li>Panama</li>
+                    <li>Poland</li>
+                    <li>Portugal</li>
+                    <li>South Africa</li>
+                    <li>Spain</li>
+                    <li>Sri Lanka</li>
+                </ul>
+
+                <ul class="clm">
+
+                    <li>Sweden</li>
+                    <li>Switzerland</li>
+                    <li>Taiwan(ROC)</li>
+                    <li>United Kingdom</li>
+                    <li>United States</li>
                 </ul>
             </div>
-        <!-- </div> -->
-      </div>
-    </section>
-    <section  class="countries">
-        <div class="country">
-           <h2>Countries with Uber Eats</h2>
-           <a href="https://www.ubereats.com/location#all-countries"> View all countries</a>
-        
-        <div class="count-column">
-           <ul class="clm">
-          
-                <li>Australia</li>
-                <li>Belgium</li>
-                <li>Canada</li>
-                <li>Chile</li>
-                <li>Costa Rica</li>
-                <li>Dominican Republic</li>
-                <li>Ecudor</li>
-                <li>El Salvador</li>
-            </ul>
-       
+        </div>
 
-           <ul class="clm">
-           
-                <li>France</li>
-                <li>Germany</li>
-                <li>Guatemala</li>
-                <li>Ireland</li>
-                <li>Italy</li>
-                <li>Japan</li>
-                <li>Kenya</li>
-                <li>Mexico</li>
-            </ul>
-           
-           <ul class="clm">
-          
-                <li>Netherlands</li>
-                <li>New Zealand</li>
-                <li>Panama</li>
-                <li>Poland</li>
-                <li>Portugal</li>
-                <li>South Africa</li>
-                <li>Spain</li>
-                <li>Sri Lanka</li>
-            </ul>
-          
-           <ul class="clm">
-           
-                <li>Sweden</li>
-                <li>Switzerland</li>
-                <li>Taiwan(ROC)</li>
-                <li>United Kingdom</li>
-                <li>United States</li>
-            </ul>
-           </div>  
-        </div>
-        </div>
-<!-- day10 -->
+        <!-- day10 -->
     </section>
     <div class="border-top">
         <hr>
@@ -187,65 +238,75 @@
     <section class="footer">
         <div class="end">
             <div class="ubereats">
-                <img   src="data:image/png;base64,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" alt="">
-             </div>  
-             <div class="appstore">
-                <img   src="data:image/png;base64,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" alt="">
-             </div>
-             <div class="googleplay">
-                <img src="https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/163bdc9b0f1e7c9e.png" alt="" >
+                <img src="data:image/png;base64,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"
+                    alt="">
+            </div>
+            <div class="appstore">
+                <img src="data:image/png;base64,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"
+                    alt="">
+            </div>
+            <div class="googleplay">
+                <img src="https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/163bdc9b0f1e7c9e.png" alt="">
             </div>
             <div class="footer-cont">
                 <div class="items">
-                  <!--27/05  -->
-                   <ul class="first">
-                    <li>Get Help</li>
-                    <li>Buy gift cards </li>
-                    <li>Add your restaurant</li>
-                    <li>Sign up to deliver</li>
-                    <li>Create a buisiness account</li>
-                    <li>Promotion</li>
-                   </ul>
-                   <ul class="second">       
-                    <li>Restaurants near me</li>
-                    <li>View all cities </li>
-                    <li>View all countries</li>
-                    <li>Pickup near me</li>
-                    <li>About Uber Eats</li>
-                    <li>Shop groceries</li>
-                    <!-- <div class="eng-logo"> -->
-                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGFyaWEtbGFiZWw9IlNlbGVjdCBhIGxhbmd1YWdlIiByb2xlPSJpbWciIGZvY3VzYWJsZT0iZmFsc2UiIHZpZXdCb3g9IjAgMCAxNiAxNSIgY2xhc3M9ImhoIGVoIGc5IGhpIj48cGF0aCBkPSJNMTIuMjY3IDYuNjY3SDkuNzMzbC0uOTMzIDIuMmMtLjQ2Ny0uMi0xLS41MzQtMS41MzMtLjkzNC44NjYtLjg2NiAxLjYtMiAyLTMuMjY2aDEuNHYtMmgtNHYtMmgtMnYyaC00djJoMS40NjZjLjQgMS4yNjYgMS4xMzQgMi40IDEuOTM0IDMuMjY2LTEuNC45MzQtMi43MzQgMS40NjctMi43MzQgMS40Njd2Mi4xMzNMMiAxMS4yNjdjLjEzMy0uMDY3IDEuODY3LS42NjcgMy42NjctMiAuOC42IDEuNjY2IDEuMDY2IDIuMzMzIDEuNGwtMS44IDRoMi4ybC44NjctMmgzLjQ2NmwuODY3IDJoMi4yem0tNS4yLTJhNi43OSA2Ljc5IDAgMDEtMS40IDJjLS41MzQtLjYtMS4wNjctMS4yNjctMS40LTJ6bTMuMDY2IDZMMTEgOC43MzNsLjg2NyAxLjkzNHoiLz48L3N2Zz4=" alt=""><li class="eng">Eglish</li>
-                    <!-- </div> -->
-                   
-                   </ul>
-              </div>
-           </div>
-        
-        <div class="border-bot">
-            <hr>
-        </div>  
-        <div class="social">
-            <div class="img">
-             <img  class="fac" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGFyaWEtaGlkZGVuPSJ0cnVlIiBmb2N1c2FibGU9ImZhbHNlIiB2aWV3Qm94PSIwIDAgMTYgMTYiIGNsYXNzPSJoaCBlaCBnOSBoaSI+PHBhdGggZD0iTTE0LjY2NyAwSDEuMzMzQy41OTcgMCAwIC41OTcgMCAxLjMzM3YxMy4zMzRDMCAxNS40MDMuNTk3IDE2IDEuMzMzIDE2aDcuMzM0di02aC0yVjcuMzMzaDJWNS42MWMwLTIuMDY3IDEuMjYyLTMuMTkyIDMuMTA2LTMuMTkyLjg4MyAwIDEuNjQyLjA2NiAxLjg2My4wOTV2Mi4xNmgtMS4yNzljLTEuMDAyIDAtMS4xOTYuNDc3LTEuMTk2IDEuMTc2djEuNDg1aDIuOTZMMTMuNDU0IDEwaC0yLjI5M3Y2aDMuNTA2Yy43MzYgMCAxLjMzMy0uNTk3IDEuMzMzLTEuMzMzVjEuMzMzQzE2IC41OTcgMTUuNDAzIDAgMTQuNjY3IDB6Ii8+PC9zdmc+"  >
-             <img class="twit" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGFyaWEtaGlkZGVuPSJ0cnVlIiBmb2N1c2FibGU9ImZhbHNlIiB2aWV3Qm94PSIwIDAgMTQgMTIiIGNsYXNzPSJoaCBlaCBnOSBoaSI+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMy45NzMgMS40MjlhNS41NTYgNS41NTYgMCAwMS0xLjY0OS40NzZBMy4wMiAzLjAyIDAgMDAxMy41ODcuMjMxYy0uNTU0LjM0LTEuMTY5LjU5LTEuODIzLjcyOEEyLjc5MiAyLjc5MiAwIDAwOS42NjggMGMtMS41ODUgMC0yLjg3IDEuMzU2LTIuODcgMy4wMjUgMCAuMjQuMDI2LjQ3LjA3NC42OTItMi4zODUtLjEyLTQuNS0xLjMyOC01LjkxNi0zLjE1NC0uMjQ5LjQ0My0uMzg4Ljk2LS4zODggMS41MjIgMCAxLjA1MS41MDcgMS45NzYgMS4yNzYgMi41MmEyLjc1NCAyLjc1NCAwIDAxLTEuMy0uMzc4di4wMzZjMCAxLjQ2Ny45ODggMi42OTIgMi4zMDIgMi45N2EyLjc3NiAyLjc3NiAwIDAxLTEuMjkuMDUyYy4zNjggMS4yMDIgMS40MjYgMi4wNzcgMi42ODUgMi4xMDJBNS41NjYgNS41NjYgMCAwMTAgMTAuNjQxIDcuODU2IDcuODU2IDAgMDA0LjQwNyAxMmM1LjI4MiAwIDguMTY4LTQuNjExIDguMTY4LTguNjA0IDAtLjEzIDAtLjI1OS0uMDEtLjM4OC41Ni0uNDI0IDEuMDUtLjk1OSAxLjQzNS0xLjU2N2wtLjAyNy0uMDEyeiIvPjwvc3ZnPg==" >
-             <img  class="insta" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGFyaWEtaGlkZGVuPSJ0cnVlIiBmb2N1c2FibGU9ImZhbHNlIiB2aWV3Qm94PSIwIDAgMTYgMTYiIGNsYXNzPSJoaCBlaCBnOSBoaSI+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik04IDBDNS44MjcgMCA1LjU1NS4wMSA0LjcwMi4wNDggMy44NS4wODggMy4yNy4yMjIgMi43Ni40MmEzLjkwOCAzLjkwOCAwIDAwLTEuNDE3LjkyM2MtLjQ0NS40NDQtLjcyLjg5LS45MjMgMS40MTctLjE5OC41MS0uMzMzIDEuMDktLjM3MiAxLjk0MkMuMDA4IDUuNTU1IDAgNS44MjcgMCA4cy4wMSAyLjQ0NS4wNDggMy4yOThjLjA0Ljg1Mi4xNzQgMS40MzMuMzcyIDEuOTQyLjIwNC41MjYuNDc4Ljk3My45MjMgMS40MTcuNDQ0LjQ0NS44OS43MiAxLjQxNy45MjMuNTEuMTk4IDEuMDkuMzMzIDEuOTQyLjM3Mi44NTMuMDQgMS4xMjUuMDQ4IDMuMjk4LjA0OHMyLjQ0NS0uMDEgMy4yOTgtLjA0OGMuODUyLS4wNCAxLjQzMy0uMTc0IDEuOTQyLS4zNzJhMy45MDggMy45MDggMCAwMDEuNDE3LS45MjNjLjQ0NS0uNDQ0LjcyLS44OS45MjMtMS40MTcuMTk4LS41MS4zMzMtMS4wOS4zNzItMS45NDIuMDQtLjg1My4wNDgtMS4xMjUuMDQ4LTMuMjk4cy0uMDEtMi40NDUtLjA0OC0zLjI5OGMtLjA0LS44NTItLjE3NC0xLjQzMy0uMzcyLTEuOTQyYTMuOTA4IDMuOTA4IDAgMDAtLjkyMy0xLjQxN0EzLjg4NiAzLjg4NiAwIDAwMTMuMjQuNDJjLS41MS0uMTk4LTEuMDktLjMzMy0xLjk0Mi0uMzcyQzEwLjQ0NS4wMDggMTAuMTczIDAgOCAwem0wIDEuNDRjMi4xMzYgMCAyLjM5LjAxIDMuMjMzLjA0OC43OC4wMzYgMS4yMDMuMTY2IDEuNDg1LjI3Ni4zNzQuMTQ1LjY0LjMxOC45Mi41OTguMjguMjguNDUzLjU0Ni41OTguOTIuMTEuMjgyLjI0LjcwNS4yNzYgMS40ODUuMDM4Ljg0NC4wNDcgMS4wOTcuMDQ3IDMuMjMzcy0uMDEgMi4zOS0uMDUgMy4yMzNjLS4wNC43OC0uMTcgMS4yMDMtLjI4IDEuNDg1LS4xNS4zNzQtLjMyLjY0LS42LjkyLS4yOC4yOC0uNTUuNDUzLS45Mi41OTgtLjI4LjExLS43MS4yNC0xLjQ5LjI3Ni0uODUuMDM4LTEuMS4wNDctMy4yNC4wNDdzLTIuMzktLjAxLTMuMjQtLjA1Yy0uNzgtLjA0LTEuMjEtLjE3LTEuNDktLjI4YTIuNDkgMi40OSAwIDAxLS45Mi0uNmMtLjI4LS4yOC0uNDYtLjU1LS42LS45Mi0uMTEtLjI4LS4yNC0uNzEtLjI4LTEuNDktLjAzLS44NC0uMDQtMS4xLS4wNC0zLjIzcy4wMS0yLjM5LjA0LTMuMjRjLjA0LS43OC4xNy0xLjIxLjI4LTEuNDkuMTQtLjM4LjMyLS42NC42LS45Mi4yOC0uMjguNTQtLjQ2LjkyLS42LjI4LS4xMS43LS4yNCAxLjQ4LS4yOC44NS0uMDMgMS4xLS4wNCAzLjI0LS4wNEw4IDEuNDR6bTAgMi40NTJhNC4xMDggNC4xMDggMCAxMDAgOC4yMTUgNC4xMDggNC4xMDggMCAwMDAtOC4yMTV6bTAgNi43NzVhMi42NjcgMi42NjcgMCAxMTAtNS4zMzQgMi42NjcgMi42NjcgMCAwMTAgNS4zMzR6bTUuMjMtNi45MzdhLjk2Ljk2IDAgMTEtMS45MiAwIC45Ni45NiAwIDAxMS45MiAweiIvPjwvc3ZnPg==" >
-           </div>
-           <p class="privacy">  Privacy Policy</p>
-           <p class="terms">Terms</p>
-           <p class="pricing">Pricing</p>
-           <p class="donot">Do not sell or share or share my personal information</p>
-        </div>
-        <div class="about">
-            <p class="service">This site is protected by reCAPTCHA and the </p>
-                <p class="g1">Google Privacy Policy </p>
-               <p class="and"> and</p>
-                <p class="g2">Terms of Service</p> 
-                <p class="app">apply.</p>
-            <p class="ubertech">© 2024 Uber Technologies Inc.</p>
-        </div>
-     </div>
-    </section>
+                    <!--27/05  -->
+                    <ul class="first">
+                        <li>Get Help</li>
+                        <li>Buy gift cards </li>
+                        <li>Add your restaurant</li>
+                        <li>Sign up to deliver</li>
+                        <li>Create a buisiness account</li>
+                        <li>Promotion</li>
+                    </ul>
+                    <ul class="second">
+                        <li>Restaurants near me</li>
+                        <li>View all cities </li>
+                        <li>View all countries</li>
+                        <li>Pickup near me</li>
+                        <li>About Uber Eats</li>
+                        <li>Shop groceries</li>
+                        <!-- <div class="eng-logo"> -->
+                        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGFyaWEtbGFiZWw9IlNlbGVjdCBhIGxhbmd1YWdlIiByb2xlPSJpbWciIGZvY3VzYWJsZT0iZmFsc2UiIHZpZXdCb3g9IjAgMCAxNiAxNSIgY2xhc3M9ImhoIGVoIGc5IGhpIj48cGF0aCBkPSJNMTIuMjY3IDYuNjY3SDkuNzMzbC0uOTMzIDIuMmMtLjQ2Ny0uMi0xLS41MzQtMS41MzMtLjkzNC44NjYtLjg2NiAxLjYtMiAyLTMuMjY2aDEuNHYtMmgtNHYtMmgtMnYyaC00djJoMS40NjZjLjQgMS4yNjYgMS4xMzQgMi40IDEuOTM0IDMuMjY2LTEuNC45MzQtMi43MzQgMS40NjctMi43MzQgMS40Njd2Mi4xMzNMMiAxMS4yNjdjLjEzMy0uMDY3IDEuODY3LS42NjcgMy42NjctMiAuOC42IDEuNjY2IDEuMDY2IDIuMzMzIDEuNGwtMS44IDRoMi4ybC44NjctMmgzLjQ2NmwuODY3IDJoMi4yem0tNS4yLTJhNi43OSA2Ljc5IDAgMDEtMS40IDJjLS41MzQtLjYtMS4wNjctMS4yNjctMS40LTJ6bTMuMDY2IDZMMTEgOC43MzNsLjg2NyAxLjkzNHoiLz48L3N2Zz4="
+                            alt="">
+                        <li class="eng">Eglish</li>
+                        <!-- </div> -->
 
-    
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-bot">
+                <hr>
+            </div>
+            <div class="social">
+                <div class="img">
+                    <img class="fac"
+                        src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGFyaWEtaGlkZGVuPSJ0cnVlIiBmb2N1c2FibGU9ImZhbHNlIiB2aWV3Qm94PSIwIDAgMTYgMTYiIGNsYXNzPSJoaCBlaCBnOSBoaSI+PHBhdGggZD0iTTE0LjY2NyAwSDEuMzMzQy41OTcgMCAwIC41OTcgMCAxLjMzM3YxMy4zMzRDMCAxNS40MDMuNTk3IDE2IDEuMzMzIDE2aDcuMzM0di02aC0yVjcuMzMzaDJWNS42MWMwLTIuMDY3IDEuMjYyLTMuMTkyIDMuMTA2LTMuMTkyLjg4MyAwIDEuNjQyLjA2NiAxLjg2My4wOTV2Mi4xNmgtMS4yNzljLTEuMDAyIDAtMS4xOTYuNDc3LTEuMTk2IDEuMTc2djEuNDg1aDIuOTZMMTMuNDU0IDEwaC0yLjI5M3Y2aDMuNTA2Yy43MzYgMCAxLjMzMy0uNTk3IDEuMzMzLTEuMzMzVjEuMzMzQzE2IC41OTcgMTUuNDAzIDAgMTQuNjY3IDB6Ii8+PC9zdmc+">
+                    <img class="twit"
+                        src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGFyaWEtaGlkZGVuPSJ0cnVlIiBmb2N1c2FibGU9ImZhbHNlIiB2aWV3Qm94PSIwIDAgMTQgMTIiIGNsYXNzPSJoaCBlaCBnOSBoaSI+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMy45NzMgMS40MjlhNS41NTYgNS41NTYgMCAwMS0xLjY0OS40NzZBMy4wMiAzLjAyIDAgMDAxMy41ODcuMjMxYy0uNTU0LjM0LTEuMTY5LjU5LTEuODIzLjcyOEEyLjc5MiAyLjc5MiAwIDAwOS42NjggMGMtMS41ODUgMC0yLjg3IDEuMzU2LTIuODcgMy4wMjUgMCAuMjQuMDI2LjQ3LjA3NC42OTItMi4zODUtLjEyLTQuNS0xLjMyOC01LjkxNi0zLjE1NC0uMjQ5LjQ0My0uMzg4Ljk2LS4zODggMS41MjIgMCAxLjA1MS41MDcgMS45NzYgMS4yNzYgMi41MmEyLjc1NCAyLjc1NCAwIDAxLTEuMy0uMzc4di4wMzZjMCAxLjQ2Ny45ODggMi42OTIgMi4zMDIgMi45N2EyLjc3NiAyLjc3NiAwIDAxLTEuMjkuMDUyYy4zNjggMS4yMDIgMS40MjYgMi4wNzcgMi42ODUgMi4xMDJBNS41NjYgNS41NjYgMCAwMTAgMTAuNjQxIDcuODU2IDcuODU2IDAgMDA0LjQwNyAxMmM1LjI4MiAwIDguMTY4LTQuNjExIDguMTY4LTguNjA0IDAtLjEzIDAtLjI1OS0uMDEtLjM4OC41Ni0uNDI0IDEuMDUtLjk1OSAxLjQzNS0xLjU2N2wtLjAyNy0uMDEyeiIvPjwvc3ZnPg==">
+                    <img class="insta"
+                        src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGFyaWEtaGlkZGVuPSJ0cnVlIiBmb2N1c2FibGU9ImZhbHNlIiB2aWV3Qm94PSIwIDAgMTYgMTYiIGNsYXNzPSJoaCBlaCBnOSBoaSI+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik04IDBDNS44MjcgMCA1LjU1NS4wMSA0LjcwMi4wNDggMy44NS4wODggMy4yNy4yMjIgMi43Ni40MmEzLjkwOCAzLjkwOCAwIDAwLTEuNDE3LjkyM2MtLjQ0NS40NDQtLjcyLjg5LS45MjMgMS40MTctLjE5OC41MS0uMzMzIDEuMDktLjM3MiAxLjk0MkMuMDA4IDUuNTU1IDAgNS44MjcgMCA4cy4wMSAyLjQ0NS4wNDggMy4yOThjLjA0Ljg1Mi4xNzQgMS40MzMuMzcyIDEuOTQyLjIwNC41MjYuNDc4Ljk3My45MjMgMS40MTcuNDQ0LjQ0NS44OS43MiAxLjQxNy45MjMuNTEuMTk4IDEuMDkuMzMzIDEuOTQyLjM3Mi44NTMuMDQgMS4xMjUuMDQ4IDMuMjk4LjA0OHMyLjQ0NS0uMDEgMy4yOTgtLjA0OGMuODUyLS4wNCAxLjQzMy0uMTc0IDEuOTQyLS4zNzJhMy45MDggMy45MDggMCAwMDEuNDE3LS45MjNjLjQ0NS0uNDQ0LjcyLS44OS45MjMtMS40MTcuMTk4LS41MS4zMzMtMS4wOS4zNzItMS45NDIuMDQtLjg1My4wNDgtMS4xMjUuMDQ4LTMuMjk4cy0uMDEtMi40NDUtLjA0OC0zLjI5OGMtLjA0LS44NTItLjE3NC0xLjQzMy0uMzcyLTEuOTQyYTMuOTA4IDMuOTA4IDAgMDAtLjkyMy0xLjQxN0EzLjg4NiAzLjg4NiAwIDAwMTMuMjQuNDJjLS41MS0uMTk4LTEuMDktLjMzMy0xLjk0Mi0uMzcyQzEwLjQ0NS4wMDggMTAuMTczIDAgOCAwem0wIDEuNDRjMi4xMzYgMCAyLjM5LjAxIDMuMjMzLjA0OC43OC4wMzYgMS4yMDMuMTY2IDEuNDg1LjI3Ni4zNzQuMTQ1LjY0LjMxOC45Mi41OTguMjguMjguNDUzLjU0Ni41OTguOTIuMTEuMjgyLjI0LjcwNS4yNzYgMS40ODUuMDM4Ljg0NC4wNDcgMS4wOTcuMDQ3IDMuMjMzcy0uMDEgMi4zOS0uMDUgMy4yMzNjLS4wNC43OC0uMTcgMS4yMDMtLjI4IDEuNDg1LS4xNS4zNzQtLjMyLjY0LS42LjkyLS4yOC4yOC0uNTUuNDUzLS45Mi41OTgtLjI4LjExLS43MS4yNC0xLjQ5LjI3Ni0uODUuMDM4LTEuMS4wNDctMy4yNC4wNDdzLTIuMzktLjAxLTMuMjQtLjA1Yy0uNzgtLjA0LTEuMjEtLjE3LTEuNDktLjI4YTIuNDkgMi40OSAwIDAxLS45Mi0uNmMtLjI4LS4yOC0uNDYtLjU1LS42LS45Mi0uMTEtLjI4LS4yNC0uNzEtLjI4LTEuNDktLjAzLS44NC0uMDQtMS4xLS4wNC0zLjIzcy4wMS0yLjM5LjA0LTMuMjRjLjA0LS43OC4xNy0xLjIxLjI4LTEuNDkuMTQtLjM4LjMyLS42NC42LS45Mi4yOC0uMjguNTQtLjQ2LjkyLS42LjI4LS4xMS43LS4yNCAxLjQ4LS4yOC44NS0uMDMgMS4xLS4wNCAzLjI0LS4wNEw4IDEuNDR6bTAgMi40NTJhNC4xMDggNC4xMDggMCAxMDAgOC4yMTUgNC4xMDggNC4xMDggMCAwMDAtOC4yMTV6bTAgNi43NzVhMi42NjcgMi42NjcgMCAxMTAtNS4zMzQgMi42NjcgMi42NjcgMCAwMTAgNS4zMzR6bTUuMjMtNi45MzdhLjk2Ljk2IDAgMTEtMS45MiAwIC45Ni45NiAwIDAxMS45MiAweiIvPjwvc3ZnPg==">
+                </div>
+                <p class="privacy"> Privacy Policy</p>
+                <p class="terms">Terms</p>
+                <p class="pricing">Pricing</p>
+                <p class="donot">Do not sell or share or share my personal information</p>
+            </div>
+            <div class="about">
+                <p class="service">This site is protected by reCAPTCHA and the </p>
+                <p class="g1">Google Privacy Policy </p>
+                <p class="and"> and</p>
+                <p class="g2">Terms of Service</p>
+                <p class="app">apply.</p>
+                <p class="ubertech">© 2024 Uber Technologies Inc.</p>
+            </div>
+        </div>
+    </section>
+    </div>
+
+    </main>
+    </div>
 </body>
+
 </html>
